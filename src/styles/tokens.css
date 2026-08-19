@@ -1,0 +1,54 @@
+:root {
+  color-scheme: dark;
+
+  /* Colors */
+  --bg-body: #000;
+  --bg-loader: #0f0f0f;
+  --text-primary: #fff;
+  --text-muted: rgb(255 255 255 / 70%);
+  --text-subtle: rgb(255 255 255 / 60%);
+  --border-subtle: rgb(255 255 255 / 10%);
+  --border-strong: rgb(255 255 255 / 100%);
+  --corner: #d9d9d9;
+  --progress-track: #292929;
+  --accent-up: #7dd493;
+  --accent-down: #fb8989;
+  --surface-glass: rgb(255 255 255 / 10%);
+
+  /* Typography */
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Layout */
+  --frame-inset: 10px;
+  --container-sm: 825px;
+  --container-md: 1000px;
+  --container-lg: 1440px;
+  --container-xl: 1400px;
+  --section-padding-y: 200px;
+  --section-padding-x: 100px;
+  --header-padding-x: 20px;
+  --header-padding-y: 8px;
+
+  /* Shadows */
+  --shadow-vignette: inset 0 0 150px 20px #000;
+
+  /* Motion vars (scroll-linked) */
+  --hero-scale: 1;
+  --hero-opacity: 1;
+  --hero-blur: 0px;
+  --footer-opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --section-padding-x: 0;
+    --section-padding-y: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --section-padding-y: 50px;
+  }
+}

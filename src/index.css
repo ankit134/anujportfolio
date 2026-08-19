@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+@import './styles/tokens.css';
+@import './styles/frame.css';
+@import './styles/components.css';
+@import './styles/motion.css';
+
+@theme {
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg-body);
+  font-family: var(--font-body);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+}
+
+#root {
+  min-height: 100vh;
+}
