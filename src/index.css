@@ -5,8 +5,8 @@
 @import './styles/motion.css';
 
 @theme {
-  --font-sans: var(--font-body);
-  --font-mono: var(--font-mono);
+  --font-sans: var(--font-family-body);
+  --font-mono: var(--font-family-mono);
 }
 
 html {

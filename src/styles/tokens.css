@@ -16,8 +16,10 @@
   --surface-glass: rgb(255 255 255 / 10%);
 
   /* Typography */
-  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-family-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-body: var(--font-family-body);
+  --font-mono: var(--font-family-mono);
 
   /* Layout */
   --frame-inset: 10px;
