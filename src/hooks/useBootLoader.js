@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { usePrefersReducedMotion } from './usePrefersReducedMotion'
 
 function completeBoot(setContentHidden, setHidden) {
@@ -15,11 +15,8 @@ export function useBootLoader() {
   const [progress, setProgress] = useState(reducedMotion ? 100 : 0)
   const [hidden, setHidden] = useState(false)
   const [contentHidden, setContentHidden] = useState(false)
-  const startedRef = useRef(false)
 
   useEffect(() => {
-    if (startedRef.current) return
-    startedRef.current = true
     document.body.classList.add('loader-active')
 
     if (reducedMotion) {
